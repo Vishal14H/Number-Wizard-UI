@@ -10,8 +10,15 @@ public class ScreenLoader : MonoBehaviour
         SceneManager.LoadScene(currentSceneIndex +  1);
     }
 
-    public void LoadStartScene(){
+    public void LoadStartScene()
+    {
         SceneManager.LoadScene(0);
 
-    }   
+    } 
+
+    public void QuitGame()
+    {
+        Application.Quit();
+
+    }  
 }
